@@ -1,0 +1,10 @@
+#include<stdio.h>
+void main(){
+float a=67;
+float *p;
+p=&a; *p=*p+10;
+a=a+100;
+printf("\nvalue of variable a = %f",a);
+printf("\nvalue of variable a (using pointer) %f",*p);
+printf("\naddress of variable a %u",p);
+}
